@@ -10,7 +10,7 @@ function getUsers() {
     .then(response => response.json())
     .then(data => {
       console.log(data);
-      let filtrado = data.filter(money > 500);
+      let filtrado = data.filter(money => money.money > 500);
       console.log(filtrado);
 
       filtrado.forEach(element => console.log(element.name));

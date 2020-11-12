@@ -3,7 +3,7 @@
 // Teniendo la lista ya filtrada, la recorreréis con el método "forEach" para mostrar por consola el nombre de cada usuario.
 
 let buttonShowList = document.getElementById("showList");
-buttonShowList.addEventListener("click", getUsers);
+buttonShowList.addEventListener("click", getUsers());
 
 function getUsers() {
   fetch("users.json")
